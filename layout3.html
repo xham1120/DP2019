@@ -1,0 +1,316 @@
+
+<html>
+    <head>
+        <title>layout3</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-image: url("images/Layout3_back.jpg");
+            }
+            header li{
+                float: left;
+                list-style: none;
+                padding: 0px 15px; /* 상하 좌우*/
+                padding: 0px 30px 0px 0px;
+                /* 상 우 하 좌 (위부터 시계방향) */
+            }
+            header ul{
+                padding: 0px;
+                margin: 5px 0px; /* 상하 좌우 */
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+            .short_line{
+                width: 30px;
+                height: 0px;
+                border-bottom: solid 1px gray;
+                margin: 5px 0px; /* 상하 좌우 */
+            }
+            .long_line{
+                width: 90px;
+                height: 0px;
+                border-bottom: solid 1px gray;
+            }
+            .image_part>div{
+                background-color: black;
+                color: white;
+                display: block; /* DIV는 블록형 태그 */
+                display: inline block; /* 인라인과 블록의 중간적인 성질 */
+                padding: 5px;
+                position: static; /* 서로 밀고 당기는 방식 */
+                position: absolute; /* 절대적인 */
+                bottom: 0px;
+                left: 0px;
+            }
+            .image_part{
+                position: relative; /* 관계형 */
+                /* relative로 설정을 하면 자식 absolute의 기준이 됨 */
+            }
+            .image_part img{
+                /* 본래 inline인데 밑공간이 생겨서 block으로 변경 */
+                display: block;
+            }
+            .card{
+                width: 310px;
+                background-color: white;
+                border-right: solid 2px #ddd;
+                border-bottom: solid 2px #ddd;
+                margin: 0px 40px 40px 0px; /* 상 우 하 좌 *?
+                /* 20px+310px+2px+20px = 실제 가로 사이즈 */
+                float: left;
+            }
+            .card h2{
+                margin: 0px;
+            }
+            .date{
+                margin: 8px 0px;
+            }
+            .info_part{
+                font-size: 5px;
+                margin: 30px;
+            }
+            .info_part h2{
+                font-size: 20px;
+            }
+            footer img{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .font_bold{
+                font-weight: bold;
+            }
+            footer div{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #wrap{
+                padding: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">index</a>
+        <div id="wrap">
+            <header>
+                <h1>Gridly</h1>
+                <div class="short_line"></div>
+                <nav>
+                <ul>
+                    <li>home</li>
+                    <li>digital designs</li>
+                    <li>wed designs</li>
+                    <li>branding/identity</li>
+                    <li>about me</li>
+                    <li>contact</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <div class="short_line"></div>
+            </header>
+            <div id="content">
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img1.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img2.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img3.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img4.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img5.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img6.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img7.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img8.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img9.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img10.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_part">
+                    <img src="images/layout3_img11.jpg" />
+                    <div>Photoshop Design</div>
+                </div>
+                <div class="info_part">
+                    <h2>Dulux Colour Awards</h2>
+                    <div class="date">12th October 2011</div>
+                    <div class="long_line"></div>
+                    <p>A direct mail kit that announces the Dulux Colour Awards 
+                        Competition has commenced. A collection of posters showing 
+                        the famous colours of history, advertises you add your own 
+                        colours to history.</p>
+                        <div class="long_line"></div>
+                        <div>Read On →</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <footer>
+                    <div class="short_line"></div>
+                    <img src="images/layout3_icon1.png">
+                    <img src="images/layout3_icon2.png">
+                    <img src="images/layout3_icon3.png">
+                    <img src="images/layout3_icon4.png">
+                    <div class="short_line"></div>
+                    <div class="font_bold">This website & the Internet Ends hereg</div>
+                    <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
+            </footer>
+        </div>
+    </body>
+</html>
